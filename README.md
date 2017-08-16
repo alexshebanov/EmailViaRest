@@ -2,13 +2,13 @@
 RESTful service, which handles orders for sending emails.
 
 Techologies i used to develop this service:
-Java 1.8
-Spring Boot
-Spring Data
-Spring Security
-Spring Mail
-Jackson
-MySQL Server
+Java 1.8,
+Spring Boot,
+Spring Data,
+Spring Security,
+Spring Mail,
+Jackson,
+MySQL Server.
 
 WARNING! For succesful building and start the app you should firstly
 configure \src\main\resources\application.properties file. Because it contains
