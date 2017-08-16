@@ -26,4 +26,4 @@ I've enabled Spring Security and added some features for admin.
 For example, by the '/refresh' GET request, admin can refresh current
 service load.
 
-https://travis-ci.org/alexshebanov/EmailViaRest.svg?branch=master
+![alt text](https://travis-ci.org/alexshebanov/EmailViaRest.svg?branch=master)
