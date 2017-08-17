@@ -24,4 +24,4 @@ can refresh orders made by selected customer per last hour.
 And by reaching '/set-volume?count="count"' GET request admin can change maximum
 order volume for service (as was required).
 
-![alt text](https://travis-ci.org/alexshebanov/EmailViaRest.svg?branch=master)
+[![Build Status](https://travis-ci.org/alexshebanov/EmailViaRest.svg?branch=master)](https://travis-ci.org/alexshebanov/EmailViaRest)
