@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
--- Host: localhost    Database: emailservice
+-- Host: mysql-t2micro.c6wjr65m2iif.us-west-2.rds.amazonaws.com    Database: students_assistant
 -- ------------------------------------------------------
--- Server version	5.7.17-log
+-- Server version	5.6.27-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,7 +28,7 @@ CREATE TABLE `order_characteristics` (
   `orders_count` int(11) NOT NULL,
   `sender` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,39 +37,35 @@ CREATE TABLE `order_characteristics` (
 
 LOCK TABLES `order_characteristics` WRITE;
 /*!40000 ALTER TABLE `order_characteristics` DISABLE KEYS */;
-INSERT INTO `order_characteristics` VALUES (1,'2017-08-16 12:41:07',1,'sender@gmail.com'),(2,'2017-08-16 13:15:16',3,'anothersender@mail.ua'),(3,'2017-08-16 13:15:23',0,'sender@mail.ua'),(4,'2017-08-16 12:53:31',3,'aanothersender@mail.ua');
+INSERT INTO `order_characteristics` VALUES (1,'2017-08-17 14:36:09',3,'anothersender@mail.ua'),(2,'2017-08-17 14:36:22',3,'sender@mail.ua');
 /*!40000 ALTER TABLE `order_characteristics` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `user`
+-- Table structure for table `user2`
 --
 
-DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `user2`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user` (
+CREATE TABLE `user2` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `login` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `role` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `user`
+-- Dumping data for table `user2`
 --
 
-LOCK TABLES `user` WRITE;
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'admin','thegreat','ROLE_ADMIN'),(2,'user','password','ROLE_USER'),(3,'vasyapupkin','password','ROLE_USER');
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+LOCK TABLES `user2` WRITE;
+/*!40000 ALTER TABLE `user2` DISABLE KEYS */;
+INSERT INTO `user2` VALUES (1,'admin','thegreat','ROLE_ADMIN'),(2,'user','password','ROLE_USER'),(3,'vasyapupkin','password','ROLE_USER');
+/*!40000 ALTER TABLE `user2` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping routines for database 'emailservice'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -80,4 +76,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-08-16 13:21:23
+-- Dump completed on 2017-08-17 14:38:10
