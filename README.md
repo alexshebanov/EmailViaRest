@@ -10,12 +10,7 @@ Spring Mail,
 Jackson,
 MySQL Server.
 
-WARNING! For succesful building and start the app you should firstly
-configure \src\main\resources\application.properties file. Because it contains
-information of smtp host and credentials. During testing i used my gmail credentials.
-As this applicaton uses database, you should configure db connection properties in
-the same file. Dump of my database is located in the same directory.
-Without props build on travis will fail.
+I used Gmail as SMTP server and Amazon RDS as datasource.
 
 In the table 'user' you can find user information and role.
 
@@ -24,6 +19,9 @@ and how many times they made orders.
 
 I've enabled Spring Security and added some features for admin.
 For example, by the '/refresh' GET request, admin can refresh current
-service load.
+service load. By the '/refresh-senders-limit?customer="customersname"' GET request admin
+can refresh orders made by selected customer per last hour.
+And by reaching '/set-volume?count="count"' GET request admin can change maximum
+order volume for service (as was required).
 
 ![alt text](https://travis-ci.org/alexshebanov/EmailViaRest.svg?branch=master)
