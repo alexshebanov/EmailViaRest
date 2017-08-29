@@ -2,12 +2,19 @@ package emailService.entity;
 
 public class Order {
     private String from;
+
     private String reply_to;
+
     private String[] to;
+
     private String[] cc;
+
     private String[] bcc;
+
     private String subject;
+
     private OrderContent content;
+
 
     public String getFrom() {
         return from;
